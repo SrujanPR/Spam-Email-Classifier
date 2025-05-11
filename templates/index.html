@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spam Classifier</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-size: 1.5em;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        input[type="text"] {
+            padding: 15px;
+            font-size: 1.2em;
+            width: 90%;
+            border-radius: 8px;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 1.2em;
+            border-radius: 8px;
+            background-color: #1e3c72;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2a5298;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Spam Email Classifier</h2>
+        <form method="post">
+            <label>Enter Email Subject:</label>
+            <input type="text" name="subject" required>
+            <br>
+            <button type="submit">Classify</button>
+        </form>
+
+        {% if result %}
+            <h3>Result: {{ result }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>
