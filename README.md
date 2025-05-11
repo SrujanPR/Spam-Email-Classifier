@@ -58,7 +58,7 @@ This project allows users to enter an email **subject line** through a web inter
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/spam-classifier-webapp.git
+git clone https://github.com/SrujanPR/Spam-Email-Classifier.git
 cd spam-classifier-webapp
 ```
 
@@ -82,7 +82,7 @@ Then open your browser and go to: http://127.0.0.1:5000
 ## 📁 Project Structure
 
 ```
-spam-email-classifier/
+Spam-Email-Classifier/
 │
 ├── spam.csv                  # Dataset (SMS Spam Collection Dataset)
 ├── app.py                    # Flask web server and ML pipeline
